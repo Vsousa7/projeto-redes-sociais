@@ -31,7 +31,8 @@ section#telefone{
     transform: translate(-50%, -50%);
     height: 454px;
     width: 225px;
-    background: url('../imagens/frame-iphone-p.png') no-repeat;
+    background-image: url('../imagens/frame-iphone-p.png');
+    background-repeat: no-repeat;
     
 }
 
@@ -41,4 +42,23 @@ iframe#tela{
     left: 16px;
     width: 193px;
     height: 341px;
+}
+
+section#redes-sociais{
+    text-align: right;
+}
+
+section#redes-sociais img{
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.596);
+    box-sizing: border-box;
+}
+
+section#redes-sociais img:hover{
+    border: 2px solid rgba(255, 255, 255, 0.616);
+    transform: translate(-3px, -3px); /**Esse comando faz as caixas se moverem 3px pra esquerda e pra cima. Como elas se moveram, a sombra das caixas também precisa se mover:**/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.596);
+    transition: transform .4s;
 }
